@@ -29,7 +29,7 @@ if (@$_REQUEST['id'] and !$_REQUEST['botao'])
 	//echo "<br> $query";	
 	foreach( $row as $key => $value )
 	{
-		$_POST[$key] = $value;
+		$_POST[$key] = $value; 
 	}
 }
 
@@ -93,7 +93,7 @@ if (@$_REQUEST['botao'] == "Gravar")
   <tr>
     <td colspan="2" align="right"><input type="submit" value="Gravar" name="botao"> - <input type="submit" value="Excluir" name="botao">
     -
-    <input type="reset" value="Novo" name="novo"> - <input type="hidden" name="id" value="<?php echo @$_REQUEST['id'] ?>" />
+    <input type="reset" value="Novo" name="novo">  <input type="hidden" name="id" value="<?php echo @$_REQUEST['id'] ?>" />
 </td>
     </tr>	
 </table>

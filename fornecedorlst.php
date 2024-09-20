@@ -29,6 +29,7 @@
     <th width="15%">Sexo</th>
     <th width="12%">Telefone</th>
     <th width="12%">Cidade</th>
+    <th width="5%">Editar</th>
   </tr>
 
 <?php
@@ -57,15 +58,14 @@
 
     
     <tr>
-      <th width="5%"><?php echo $coluna['id']; ?></th>
-      <th width="30%"><?php echo $coluna['nome']; ?></th>
-      <th width="15%"><?php echo $coluna['sexo']; ?></th>
-      <th width="12%"><?php echo $coluna['telefone']; ?></th>
-      <th width="12%"><?php echo $coluna['cidade']; ?></th>
+      <th width="5%"style="background:#808080;" ><?php echo $coluna['id']; ?></th>
+      <th width="30%" ><?php echo $coluna['nome']; ?></th>
+      <th width="15%" style="background:#808080;"><?php echo $coluna['sexo']; ?></th>
+      <th width="12%" ><?php echo $coluna['telefone']; ?></th>
+      <th width="12%" style="background:#808080;"><?php echo $coluna['cidade']; ?></th>
         <td>
         <a 
-            href="fornecedorcds.php?pag=cliente&id=<?php echo $coluna['id']; ?>"
-            >editar</a>
+          href="fornecedorcds.php?pag=cliente&id=<?php echo $coluna['id']; ?>"><img src="./edittar.jpg" style="width: 50%;"></a>
         </td>
 
     </tr>
